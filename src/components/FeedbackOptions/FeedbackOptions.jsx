@@ -8,7 +8,9 @@ export const FeedbackOptions = ({options, onLeaveFeedback }) => {
 
         <ButtonOptions> 
             {options.map(btn=> {
-                return (<Button onClick={() => { onLeaveFeedback(btn) }}
+                return (<Button onClick={() => { console.log(btn)
+                    onLeaveFeedback(btn) 
+                }}
                     key={btn}>
                     {btn}</Button>) 
                     
